@@ -1,47 +1,56 @@
+;(function(){
 
-const VueValidateField = function(Vue, options) {
+    "use strict";
 
-
-    Vue.directive('validate-field', {
-
-        
-        priority: 801,
-
-		model: null,
+	var install = function(Vue, options) {
 
 
-        bind: function() {
+	    Vue.directive('validate-field', {
+
+	        
+	        priority: 801,
+
+			model: null,
 
 
-            this.model = this.el.getAttribute('v-model');
-
-        },
+	        bind: function() {
 
 
-        update: function (errors) {
+	            this.model = this.el.getAttribute('v-model');
 
-	        if (!errors) return;
-
-
-	        let error = errors[this.model];
-
-	        if (typeof error != 'undefined') {
+	        },
 
 
-	            this.el.classList.add('has-error');
+	        update: function (errors) {
 
-	        } else {
-
-
-	            this.el.classList.remove('has-error');
-	        }
-	    },
-
-    });
+		        if (!errors) return;
 
 
+		        let error = errors[this.model];
 
-}
+		        if (typeof error != 'undefined') {
 
 
-export default VueValidateField;
+		            this.el.classList.add('has-error');
+
+		        } else {
+
+
+		            this.el.classList.remove('has-error');
+		        }
+		    },
+
+	    });
+
+
+
+	}
+
+    if(typeof exports === "object") 
+    	module.exports = install;
+    else if(typeof define === "function" && define.amd) 
+    	define([], function() { return install; });
+    else if(window.Vue) 
+    	Vue.use(install);
+
+})();	

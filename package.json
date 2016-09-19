@@ -1,8 +1,8 @@
 {
   "name": "v-validate-field",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Adds a vue directive for laravel's form validation.",
-  "main": "index.js",
+  "main": "src/validate-input.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
