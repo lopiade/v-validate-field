@@ -1,0 +1,19 @@
+{
+  "name": "v-validate-field",
+  "version": "1.0.0",
+  "description": "Adds a vue directive for laravel's form validation.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lopiade/v-validate-field.git"
+  },
+  "author": "Dannehl",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lopiade/v-validate-field/issues"
+  },
+  "homepage": "https://github.com/lopiade/v-validate-field#readme"
+}
