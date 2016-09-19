@@ -8,17 +8,14 @@ A simple directive plugin for Vue 1.x that lets you validate a input field using
 
 ## Install
 
-	```
 	$ npm install --save lopiade/v-validate-field
-	```
 
 
 ## Usage
 
-	```
 	import Validator from 'v-validate-field';
 	Vue.use(Validator);
-	```
+
 
 ## License
 
